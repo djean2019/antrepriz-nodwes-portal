@@ -1,0 +1,247 @@
+export const fr = {
+  meta: {
+    title: 'ANTREPRIZ NODWES | Matériaux de construction',
+    description:
+      'ANTREPRIZ NODWES — matériaux de construction, retrait en magasin et livraison.',
+  },
+  nav: {
+    home: 'Accueil',
+    catalog: 'Catalogue',
+    cart: 'Panier',
+    admin: 'Admin',
+    alerts: 'Alertes',
+  },
+  auth: {
+    login: 'Se connecter',
+    signUp: 'Créer un compte',
+    logout: 'Déconnexion',
+    loginTitle: 'Connexion',
+    signUpTitle: 'Inscription',
+    guestHint:
+      'Par défaut, vous naviguez en tant qu’invité. Connectez-vous ou créez un compte pour suivre vos commandes.',
+    username: 'Nom d’utilisateur',
+    password: 'Mot de passe',
+    confirmPassword: 'Confirmer le mot de passe',
+    createAccount: 'Créer le compte',
+    continueAsGuest: 'Continuer en tant qu’invité →',
+    errors: {
+      invalid: 'Nom d’utilisateur ou mot de passe incorrect.',
+      exists: 'Ce nom d’utilisateur existe déjà.',
+      invalidUsername: 'Le nom d’utilisateur doit contenir au moins 3 caractères.',
+      weakPassword: 'Le mot de passe doit contenir au moins 4 caractères.',
+      passwordMismatch: 'Les mots de passe ne correspondent pas.',
+    },
+  },
+  account: {
+    title: 'Mon espace',
+    welcome: 'Bonjour, {{name}}.',
+    myOrders: 'Mes commandes',
+    noOrders: 'Vous n’avez pas encore passé de commande avec ce compte.',
+    viewOrder: 'Voir le détail',
+    shopCatalog: 'Parcourir le catalogue',
+  },
+  brand: {
+    tagline: 'Matériaux de construction',
+    company: 'ANTREPRIZ NODWES',
+    region: 'Nord-Ouest Haïti',
+  },
+  footer: {
+    pickupDelivery: 'Retrait en magasin et livraison à domicile dans la région du nord-ouest.',
+    mvpNote: 'Démo MVP · React + Vite · Données fictives (Phase 1)',
+  },
+  home: {
+    heroText:
+      'Ciment, bois, toiture, plomberie et outils pour les builders. Parcourez le catalogue, commandez en ligne et choisissez le retrait ou la livraison.',
+    searchPlaceholder: 'Rechercher (ciment, bloc, tuyau…)',
+    search: 'Rechercher',
+    featuredTitle: 'Produits vedettes',
+    featuredSubtitle: 'Articles populaires disponibles pour retrait ou livraison.',
+    viewCatalog: 'Voir tout le catalogue →',
+    pickupTitle: 'Retrait en magasin',
+    pickupText:
+      'Passez commande en ligne et récupérez vos matériaux au dépôt ANTREPRIZ NODWES lorsque la commande est prête.',
+    deliveryTitle: 'Livraison à domicile',
+    deliveryText:
+      'Indiquez votre adresse à la caisse. Notre équipe confirme la disponibilité et planifie la livraison sur votre chantier.',
+    stockTitle: 'Stock en temps réel',
+    stockText:
+      'La caisse vérifie les quantités disponibles avant validation pour éviter les surprises.',
+  },
+  catalog: {
+    title: 'Catalogue produits',
+    subtitle:
+      'Matériaux de construction ANTREPRIZ NODWES — prix et stock affichés pour chaque article.',
+    all: 'Tous',
+    resultsFor: 'Résultats pour',
+    emptyTitle: 'Aucun produit trouvé',
+    emptyDescription: 'Essayez une autre catégorie ou un autre terme de recherche.',
+    clearFilters: 'Effacer les filtres',
+  },
+  product: {
+    back: '← Retour au catalogue',
+    quantity: 'Quantité',
+    addToCart: 'Ajouter au panier',
+    viewCart: 'Voir le panier',
+    add: 'Ajouter',
+    notFoundTitle: 'Produit introuvable',
+    notFoundDescription: 'Cet article a peut-être été archivé ou le lien est incorrect.',
+    browseCatalog: 'Parcourir le catalogue',
+  },
+  stock: {
+    inStock: 'En stock',
+    outOfStock: 'Rupture de stock',
+    lowStock: 'Stock faible ({{count}})',
+  },
+  cart: {
+    title: 'Panier',
+    emptyTitle: 'Votre panier est vide',
+    emptyDescription: 'Ajoutez des matériaux depuis le catalogue pour commencer une commande.',
+    each: 'l’unité',
+    remove: 'Retirer',
+    summary: 'Récapitulatif',
+    subtotal: 'Sous-total',
+    estimatedTotal: 'Total estimé',
+    deliveryNote: 'Frais de livraison appliqués à la caisse si vous choisissez la livraison.',
+    checkout: 'Passer à la caisse',
+  },
+  checkout: {
+    title: 'Caisse',
+    subtitle:
+      'Finalisez votre commande avec ANTREPRIZ NODWES — retrait au magasin ou livraison sur site.',
+    fulfillment: 'Mode de livraison',
+    pickup: 'Retrait en magasin',
+    pickupHint: 'Retirez votre commande chez ANTREPRIZ NODWES lorsque tout est prêt.',
+    delivery: 'Livraison à domicile',
+    deliveryHint: 'Frais de livraison {{fee}} ajoutés à la commande.',
+    contact: 'Coordonnées',
+    name: 'Nom complet',
+    email: 'Courriel',
+    phone: 'Téléphone',
+    address: 'Adresse de livraison',
+    placeOrder: 'Confirmer la commande',
+    placing: 'Commande en cours…',
+    emptyCart: 'Votre panier est vide.',
+    browseProducts: 'Parcourir les produits',
+    summary: 'Récapitulatif',
+    deliveryLine: 'Livraison',
+    total: 'Total',
+    errors: {
+      emptyCart: 'Votre panier est vide.',
+      deliveryAddress: 'L’adresse de livraison est obligatoire.',
+      productUnavailable: 'Un produit de votre panier n’est plus disponible.',
+      insufficientStock:
+        'Stock insuffisant pour {{name}}. Seulement {{count}} disponible(s).',
+    },
+  },
+  order: {
+    confirmed: 'Commande confirmée',
+    reference: 'Référence {{ref}}',
+    thankYou:
+      'Merci, {{name}}. ANTREPRIZ NODWES prépare votre commande en {{mode}}.',
+    modePickup: 'retrait',
+    modeDelivery: 'livraison',
+    status: 'Statut',
+    fulfillment: 'Mode',
+    deliveryAddress: 'Adresse de livraison',
+    total: 'Total',
+    notFound: 'Commande introuvable.',
+    returnHome: 'Retour à l’accueil',
+    continueShopping: 'Continuer vos achats',
+    home: 'Accueil',
+  },
+  notifications: {
+    label: 'Notifications',
+    newProducts: 'Nouveaux produits',
+    empty: 'Aucune notification pour le moment.',
+    newProduct: 'Nouveau : {{name}} en stock',
+  },
+  admin: {
+    signIn: 'Connexion administrateur',
+    demoCreds: 'Identifiants démo :',
+    invalidLogin: 'Courriel ou mot de passe invalide.',
+    signInButton: 'Se connecter',
+    signOut: 'Se déconnecter',
+    dashboard: 'Tableau de bord admin',
+    dashboardSubtitle: 'ANTREPRIZ NODWES — produits, inventaire, commandes',
+    activeProducts: 'Produits actifs',
+    lowStock: 'Stock faible',
+    recentOrders: 'Commandes récentes',
+    addProduct: 'Ajouter un produit',
+    editProduct: 'Modifier le produit',
+    sku: 'SKU',
+    name: 'Nom',
+    description: 'Description',
+    price: 'Prix',
+    imageUrl: 'URL de l’image',
+    stockOnHand: 'Quantité en stock',
+    lowStockThreshold: 'Seuil stock faible',
+    publish: 'Publier le produit',
+    save: 'Enregistrer',
+    cancel: 'Annuler',
+    inventory: 'Inventaire',
+    edit: 'Modifier',
+    archive: 'Archiver',
+    orders: 'Commandes',
+    noOrders: 'Aucune commande client pour cette session.',
+    reference: 'Référence',
+    customer: 'Client',
+    total: 'Total',
+    fulfillment: 'Mode',
+    status: 'Statut',
+  },
+  orderStatus: {
+    PENDING: 'En attente',
+    CONFIRMED: 'Confirmée',
+    PREPARING: 'En préparation',
+    READY_FOR_PICKUP: 'Prête pour retrait',
+    OUT_FOR_DELIVERY: 'En livraison',
+    COMPLETED: 'Terminée',
+    CANCELLED: 'Annulée',
+  },
+  fulfillment: {
+    pickup: 'retrait',
+    delivery: 'livraison',
+  },
+  categories: {
+    'cat-cement': 'Ciment et béton',
+    'cat-lumber': 'Bois et charpente',
+    'cat-roofing': 'Toiture',
+    'cat-plumbing': 'Plomberie',
+    'cat-tools': 'Outils et quincaillerie',
+  },
+  products: {
+    'prod-1': {
+      name: 'Ciment Portland 50 kg',
+      description:
+        'Ciment Type I usage général pour fondations, blocs et coulées structurelles. Conserver au sec selon les recommandations du fabricant.',
+    },
+    'prod-2': {
+      name: 'Bloc de béton 6 po',
+      description:
+        'Bloc creux standard pour murs et cloisons. Dimensions régulières pour accélérer la maçonnerie.',
+    },
+    'prod-3': {
+      name: 'Bois traité 2×4×8 pi',
+      description:
+        'Bois contact sol pour charpente, coffrage et travaux extérieurs en climat humide.',
+    },
+    'prod-4': {
+      name: 'Tôle ondulée galvanisée',
+      description:
+        'Tôle ondulée 8 pi. Associez fixations et faîtages compatibles.',
+    },
+    'prod-5': {
+      name: 'Tuyau PVC 1 po × 10 pi',
+      description:
+        'PVC Schedule 40 pour eau froide et drainage. Compatible avec raccords à ciment solvant standard.',
+    },
+    'prod-6': {
+      name: 'Marteau arrache-clou 16 oz',
+      description:
+        'Manche fibre de verre pour le chantier. Tête équilibrée pour charpente et finition.',
+    },
+  },
+} as const
+
+export type MessageTree = typeof fr
+export type Messages = MessageTree
