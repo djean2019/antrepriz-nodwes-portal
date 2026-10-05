@@ -43,6 +43,7 @@ export const fr = {
   brand: {
     tagline: 'Matériaux de construction',
     company: 'ANTREPRIZ NODWES',
+    address: 'Saint-Louis du Nord, place du marché',
     region: 'Nord-Ouest Haïti',
   },
   footer: {
@@ -208,6 +209,7 @@ export const fr = {
     'cat-roofing': 'Toiture',
     'cat-plumbing': 'Plomberie',
     'cat-tools': 'Outils et quincaillerie',
+    'cat-appliances': 'Produits électroménager',
   },
   products: {
     'prod-1': {
@@ -239,6 +241,36 @@ export const fr = {
       name: 'Marteau arrache-clou 16 oz',
       description:
         'Manche fibre de verre pour le chantier. Tête équilibrée pour charpente et finition.',
+    },
+    'prod-7': {
+      name: 'Four micro-ondes 20 L',
+      description:
+        'Micro-ondes 700 W avec plateau tournant, minuterie et programmes de décongélation.',
+    },
+    'prod-8': {
+      name: 'Onduleur 3000 W pur sinus',
+      description:
+        'Onduleur 12 V → 220 V pour maison, commerce ou panneaux solaires. Protection surcharge et surchauffe.',
+    },
+    'prod-9': {
+      name: 'Batterie gel 12 V 200 Ah',
+      description:
+        'Batterie gel étanche, faible entretien, idéale pour onduleur, solaire et secours.',
+    },
+    'prod-10': {
+      name: 'Batterie Trojan T-1275 12 V',
+      description:
+        'Batterie deep cycle Trojan T-1275 pour systèmes solaires et groupes électrogènes.',
+    },
+    'prod-11': {
+      name: 'Batterie LTH L-100 12 V',
+      description:
+        'Batterie LTH 100 Ah maintenance réduite pour véhicules, onduleurs et installations de secours.',
+    },
+    'prod-12': {
+      name: 'Four électrique encastrable 60 cm',
+      description:
+        'Four électrique multifonction avec convection, minuterie et porte double vitrage.',
     },
   },
 } as const
