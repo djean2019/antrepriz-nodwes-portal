@@ -6,6 +6,11 @@ export const categories: Category[] = [
   { id: 'cat-roofing', name: 'Toiture', slug: 'roofing' },
   { id: 'cat-plumbing', name: 'Plomberie', slug: 'plumbing' },
   { id: 'cat-tools', name: 'Outils et quincaillerie', slug: 'tools-hardware' },
+  {
+    id: 'cat-appliances',
+    name: 'Produits électroménager',
+    slug: 'household-appliances',
+  },
 ]
 
 export const initialProducts: Product[] = [
@@ -87,6 +92,90 @@ export const initialProducts: Product[] = [
     active: true,
     onHand: 52,
     lowStockThreshold: 10,
+  },
+  {
+    id: 'prod-7',
+    sku: 'APPL-MW-20',
+    name: 'Four micro-ondes 20 L',
+    description:
+      'Micro-ondes 700 W avec plateau tournant, minuterie et programmes de décongélation.',
+    price: 89.0,
+    categoryId: 'cat-appliances',
+    imageUrl:
+      'https://images.unsplash.com/photo-1585659722983-3b2752a8d0a8?w=800&q=80',
+    active: true,
+    onHand: 14,
+    lowStockThreshold: 5,
+  },
+  {
+    id: 'prod-8',
+    sku: 'APPL-INV-3K',
+    name: 'Onduleur 3000 W pur sinus',
+    description:
+      'Onduleur 12 V → 220 V pour maison, commerce ou panneaux solaires. Protection surcharge et surchauffe.',
+    price: 245.0,
+    categoryId: 'cat-appliances',
+    imageUrl:
+      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    active: true,
+    onHand: 22,
+    lowStockThreshold: 6,
+  },
+  {
+    id: 'prod-9',
+    sku: 'APPL-BAT-GEL-200',
+    name: 'Batterie gel 12 V 200 Ah',
+    description:
+      'Batterie gel étanche, faible entretien, idéale pour onduleur, solaire et secours.',
+    price: 320.0,
+    categoryId: 'cat-appliances',
+    imageUrl:
+      'https://images.unsplash.com/photo-1605792657660-596900e6069a?w=800&q=80',
+    active: true,
+    onHand: 11,
+    lowStockThreshold: 4,
+  },
+  {
+    id: 'prod-10',
+    sku: 'APPL-BAT-TRJ-1275',
+    name: 'Batterie Trojan T-1275 12 V',
+    description:
+      'Batterie deep cycle Trojan T-1275 pour systèmes solaires et groupes électrogènes.',
+    price: 285.0,
+    categoryId: 'cat-appliances',
+    imageUrl:
+      'https://images.unsplash.com/photo-1593941707874-ef259265ce12?w=800&q=80',
+    active: true,
+    onHand: 8,
+    lowStockThreshold: 3,
+  },
+  {
+    id: 'prod-11',
+    sku: 'APPL-BAT-LTH-100',
+    name: 'Batterie LTH L-100 12 V',
+    description:
+      'Batterie LTH 100 Ah maintenance réduite pour véhicules, onduleurs et installations de secours.',
+    price: 165.0,
+    categoryId: 'cat-appliances',
+    imageUrl:
+      'https://images.unsplash.com/photo-1624397640148-949b1732bb0a?w=800&q=80',
+    active: true,
+    onHand: 19,
+    lowStockThreshold: 5,
+  },
+  {
+    id: 'prod-12',
+    sku: 'APPL-OVN-60',
+    name: 'Four électrique encastrable 60 cm',
+    description:
+      'Four électrique multifonction avec convection, minuterie et porte double vitrage.',
+    price: 420.0,
+    categoryId: 'cat-appliances',
+    imageUrl:
+      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
+    active: true,
+    onHand: 6,
+    lowStockThreshold: 2,
   },
 ]
 

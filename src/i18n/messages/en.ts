@@ -43,6 +43,7 @@ export const en = {
   brand: {
     tagline: 'Construction Supplies',
     company: 'ANTREPRIZ NODWES',
+    address: 'Saint-Louis du Nord, place du marché',
     region: 'Northwest Haiti',
   },
   footer: {
@@ -208,6 +209,7 @@ export const en = {
     'cat-roofing': 'Roofing',
     'cat-plumbing': 'Plumbing',
     'cat-tools': 'Tools & Hardware',
+    'cat-appliances': 'Household appliances',
   },
   products: {
     'prod-1': {
@@ -239,6 +241,36 @@ export const en = {
       name: '16 oz Claw Hammer',
       description:
         'Fiberglass handle claw hammer for everyday site work. Balanced head for framing and finish tasks.',
+    },
+    'prod-7': {
+      name: '20 L Microwave Oven',
+      description:
+        '700 W microwave with turntable, timer, and defrost programs for everyday kitchen use.',
+    },
+    'prod-8': {
+      name: '3000 W Pure Sine Wave Inverter',
+      description:
+        '12 V to 220 V inverter for home, shop, or solar setups. Overload and thermal protection.',
+    },
+    'prod-9': {
+      name: '12 V 200 Ah Gel Battery',
+      description:
+        'Sealed gel battery with low maintenance—suited for inverters, solar, and backup power.',
+    },
+    'prod-10': {
+      name: 'Trojan T-1275 12 V Battery',
+      description:
+        'Trojan T-1275 deep-cycle battery for solar arrays and generator backup systems.',
+    },
+    'prod-11': {
+      name: 'LTH L-100 12 V Battery',
+      description:
+        'LTH 100 Ah low-maintenance battery for vehicles, inverters, and backup installations.',
+    },
+    'prod-12': {
+      name: '60 cm Built-In Electric Oven',
+      description:
+        'Multi-function electric oven with convection, timer, and double-glazed door.',
     },
   },
 }

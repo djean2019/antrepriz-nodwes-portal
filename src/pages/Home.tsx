@@ -1,15 +1,14 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ProductCard } from '../components/ProductCard'
+import { ProductSearch } from '../components/ProductSearch'
 import { categories } from '../data/mockData'
 import { useApp } from '../context/AppContext'
 import { useI18n } from '../i18n/I18nContext'
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 
 export function Home() {
   const { products } = useApp()
   const { t, categoryName } = useI18n()
-  const navigate = useNavigate()
-  const [query, setQuery] = useState('')
 
   const activeProducts = useMemo(
     () => products.filter((p) => p.active),
@@ -17,12 +16,6 @@ export function Home() {
   )
 
   const featured = useMemo(() => activeProducts.slice(0, 4), [activeProducts])
-
-  function handleSearch(e: React.FormEvent) {
-    e.preventDefault()
-    const q = query.trim()
-    navigate(q ? `/products?q=${encodeURIComponent(q)}` : '/products')
-  }
 
   return (
     <div>
@@ -41,23 +34,10 @@ export function Home() {
           <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             {t('brand.company')}
           </h1>
+          <p className="mt-2 max-w-3xl text-sm font-medium text-slate-300 sm:text-base">
+            {t('brand.address')}
+          </p>
           <p className="mt-4 max-w-2xl text-lg text-slate-200 sm:text-xl">{t('home.heroText')}</p>
-
-          <form onSubmit={handleSearch} className="mt-8 flex max-w-xl flex-col gap-2 sm:flex-row">
-            <input
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder={t('home.searchPlaceholder')}
-              className="flex-1 rounded-xl border-0 px-4 py-3 text-slate-900 shadow-lg outline-none ring-2 ring-transparent focus:ring-brand-500"
-            />
-            <button
-              type="submit"
-              className="rounded-xl bg-brand-500 px-6 py-3 font-semibold text-white hover:bg-brand-600"
-            >
-              {t('home.search')}
-            </button>
-          </form>
 
           <div className="mt-10 flex flex-wrap gap-3">
             {categories.map((cat) => (
@@ -74,6 +54,8 @@ export function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-12">
+        <ProductSearch showLabel className="mb-8 max-w-2xl" />
+
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
             <h2 className="text-2xl font-bold text-slate-900">{t('home.featuredTitle')}</h2>
